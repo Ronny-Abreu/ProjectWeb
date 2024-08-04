@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+.logo span {
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--second-bg-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--bg-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 8rem; /* Adjust this value to match your header height */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: beige;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2rem; /* Adjust this value for your desired font size */
+    text-align: justify;
+}
+
+.span2{
+    color: whitesmoke;
+}
+
+/* CONTENIDO */
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.sec #h2-title {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 12.5em;
+    margin-bottom: 10px;
+}
+
+.sec .p1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.sec #h21 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 18px;
+    margin-left: 7.7em;
+}
+
+.sec .p2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.sec #h22 {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 18px;
+    margin-left: 5em;
+}
+
+.sec .p3 {
+    color: #FFF;
+    font-size: 18px;
+    margin: 0;
+    text-align: justify;
+}
+
+
+/* CSS para la galería */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px
+}
+
+.gallery-item {
+    width: 23%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 19px;
+    margin: 10px 0 5px;
+}
+
+.hover-image {
+    transition: transform 0.3s ease;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hover-image:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
+}
+
+.sec #h23 {
+    color: #FFF;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 18px;
+    margin-left: 3em;
+}
+
+.sec .p4 {
+    color: #FFF;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.sec #h24 {
+    margin-top: 15px;
+    color: #FFF;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 18px;
+    margin-top: 25px;
+    margin-left: 1.8em;
+}
+
+.sec .p5 {
+    color: #FFF;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.sec #h25 {
+    margin-top: 15px;
+    color: #FFF;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.sec .p6 {
+    color: #FFF;
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.sec #h26 {
+    margin-top: 15px;
+    color: #FFF;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.sec .p7 {
+    color: #FFF;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.sec #h27 {
+    margin-top: 15px;
+    color: #FFF;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 18px;
+    margin-left: 7em;
+}
+
+.sec #h28 {
+    margin-top: 15px;
+    color: #FFF;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 18px;
+    margin-left: 5em;
+}
+
+.sec #h30 {
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 18px;
+    margin-left: 14.5em;
+}
+
+.sec .p8 {
+    color: #FFF;
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.sec #h2-conclusion {
+    font-size: 35px;
+    color: #fff;
+    margin-left: 520px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-left: 13em;
+}
+
+.sec .p-conclusion {
+    color: #FFF;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: justify;
+
+}
+
+.next-btn a {
+    list-style: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFF;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-left: 520px;
+    padding: 10px 22px 10px 22px;
+    margin-left: 22em;
+}
+
+.next-btn a:hover {
+    background:#00ffee;
+    font-size: 22px;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    margin-left: 520px;
+    padding: 10px 22px 10px 22px;
+    margin-left: 22em;
+}
+
+.p1-btn a {
+    list-style: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFF;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-left: 520px;
+    padding: 10px 22px 10px 22px;
+    margin-left: 19.7em;
+}
+
+.p1-btn a:hover {
+    background:#003329;
+    font-size: 22px;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    margin-left: 520px;
+    padding: 10px 22px 10px 22px;
+    margin-left: 19.7em;
+}
+
+
+.contamin-span{
+    color: #00ffee;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.list-item{
+    font-size: 18px;
+    margin-left: 17px;
+    text-align: justify;
+}
+
+.negritas-azules{
+    color: #00ffee;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.location {
+    margin: 20px 0;
+    overflow: hidden;
+    background-color:#003329;
+    padding: 20px;
+}
+
+.location img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: filter 0.1s; /* Transición suave */
+}
+
+.location img:hover {
+    filter: brightness(30%); /* Oscurecer al pasar el cursor */
+}
+
+.location-left img {
+    float: left;
+    margin-right: 20px;
+}
+
+.location-right img {
+    float: right;
+    margin-left: 20px;
+}
+
+.location .text {
+    overflow: hidden;
+}
+
+.location h2 {
+    margin-top: 0;
+    color:antiquewhite;
+    font-size: 19px;
+}
+
+.location p {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    
+}
